@@ -1,15 +1,15 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const Card = () => {
+const Card = (props) => {
+
+  
   return (
     <>
-    <View style={styles.card}>
-      <Text style={styles.titulo}>Hello World!</Text>
-      <Text>Card 1</Text>
-      <Text>Card 2</Text>
-      <Text>Card 3</Text>
-    </View>
+      <View style={styles.card}>
+            <Text style={styles.titulo}>{ props.titulo }</Text>
+            {props.children}
+     </View>
         
     </>
   )
